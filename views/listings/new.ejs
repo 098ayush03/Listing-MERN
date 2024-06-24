@@ -1,0 +1,73 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WwanderLust</title>
+  </head> -->
+  <% layout("/layouts/boilerplate")%>
+  <body>
+<!-- row div -->
+    <div class="row mt-3">
+<!-- col div -->
+      <div class="col-8 offset-2">
+<br> <br> <br>
+    <h3>Create a New Listing</h3>
+    <form method="POST" action="/listings">
+
+      <div class="mb-3">
+        <lebel for="title" class="form-lebel">Title</lebel>
+      <input name="listing[title]"
+       placeholder="Add a catchy title" 
+       type="text"
+        class="form-control"/>
+      </div>
+
+      <div class="mb-3">
+        <lebel for="description" class="form-lebel">Description</lebel>
+        <textarea
+        name="listing[description]"
+        class="form-control"
+      ></textarea>
+      </div>
+
+      <div class="mb-3">
+        <lebel for="image" class="form-lebel" >Image</lebel>
+        <input
+        name="listing[image]"
+        placeholder="enter image URL/Link"
+        type="text" class="form-control"
+      />
+      </div>
+
+      <div class="row">
+        <div class="mb-3 col-md-4">
+          <lebel for="price" class="form-lebel" >price</lebel>
+          <input name="listing[price]" placeholder="1200" type="number" class="form-control" />
+        </div>
+       
+       <div class="mb-3 col-md-8">
+        <lebel for="country" class="form-lebel" >Country</lebel>
+        <input name="listing[country]" placeholder="India" type="text" class="form-control" />
+       </div>
+         
+  
+      </div>
+     
+      <div class="mb-3">
+        <lebel for="location" class="form-lebel" >Location</lebel>
+        <input
+        name="listing[location]"
+        placeholder="Jaipur, Rajsthan"
+        type="text" class="form-control"
+      />
+      </div>
+      
+      <button class="btn btn-dark add-btn mt-3">Add</button>
+     
+    </form>
+
+  </div>
+</div>
+  <!-- </body>
+</html> -->
